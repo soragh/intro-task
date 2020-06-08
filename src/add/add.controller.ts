@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Render } from '@nestjs/common';
+import { Controller, Get, Post, Render, Body } from '@nestjs/common';
 import { AppService } from '../app.parser'
 
 
@@ -10,12 +10,14 @@ export class AddController {
     @Get()
     @Render('add')
     add(){
-        
+        return
     }
 
     @Post()
-    create(){
-        return
+    create(
+        @Body() completeBody:{name:string}
+    ){
+        return completeBody
     }
 
 }
