@@ -8,9 +8,11 @@ export class AppController {
   @Get()
   @Render('index')
   getHello():any {
+    console.log(this.appService.parse())
     return this.appService.parse().then(
-      
       (result)=>result ? {outputs: result.list}:[]
     );
   }
+
+  
 }
