@@ -1,4 +1,7 @@
 {
   "collection": "@nestjs/schematics",
-  "sourceRoot": "src"
+  "sourceRoot": "src",
+  "scripts":[
+      "./node_modules/jquery/dist/jquery.min.js"
+  ]
 }

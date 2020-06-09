@@ -10,7 +10,7 @@ async function bootstrap() {
   app.useStaticAssets(join(__dirname,'/node_modules/bootstrap/dist/css'))
   app.useStaticAssets(join(__dirname,'..','public'))
   app.setBaseViewsDir(join(__dirname,'..','views'))
-  registerHelper('inc',function (options){return options+1})
+  registerHelper('inc',function (value){return value+1})
   app.setViewEngine('hbs')
   await app.listen(port);
   console.log(`started on port ${port}`)
