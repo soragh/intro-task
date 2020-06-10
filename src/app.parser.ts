@@ -9,8 +9,11 @@ class Entity {
 @Injectable()
 export class AppService {
   constructor(
-    private readonly csvParser: CsvParser
-  ) {}
+    private readonly csvParser: CsvParser,
+    private readonly filename:string
+  ) {
+    filename=process.env.TEST
+  }
  
   async parse() {
     // Create stream from file (or get it from S3)
