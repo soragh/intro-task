@@ -47,8 +47,6 @@ $ git commit -am "make it better"
 $ git push heroku master
 ```
 
-## Issues I faced
 
-I was new to nestjs and its workflows, however as it is an extension of nodejs it was relatively easy to get started with. 
 
 
