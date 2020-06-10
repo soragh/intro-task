@@ -14,5 +14,8 @@ export class AppController {
     );
   }
 
-  
+  @Get('test')
+  test():string{
+    return process.env.TEST;
+  }
 }

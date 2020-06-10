@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Render, Body, Req, Redirect } from '@nestjs/common';
+import { Controller, Get, Post, Render, Body, Redirect } from '@nestjs/common';
 import { AppService } from '../app.parser'
 import {CreateDataDto} from './dto/create.data.dto'
 
